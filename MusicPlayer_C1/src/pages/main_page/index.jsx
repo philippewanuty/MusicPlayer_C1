@@ -6,10 +6,9 @@ export const MainPage = () => {
   return (
     <>
       <Container>
-        
         <Player />
-        
-
+        <Player />
+        <Player />
       </Container>
     </>
   );

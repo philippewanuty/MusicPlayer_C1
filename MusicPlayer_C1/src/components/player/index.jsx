@@ -1,27 +1,38 @@
-import { Container } from './style';
+import { Container, Rewind, Play, FastForward, PlayerButtons, Timer, ProgressBar, PlayerComponents, Text } from './style';
 import { RiPlayFill, RiRewindFill, RiSpeedFill } from 'react-icons/ri';
-import ImgCover from '../../assets/player_cover.jpeg'
+import ImgCover from '../../assets/player_cover.jpeg';
 
-export const Player = () => {
-  return (
-    <>
-      <Container>
-        <img src={ImgCover} alt="" />
-        <h1>House of the lord</h1>
-        <p>Hillsong - Young and Free</p>
+export const Player = ({ name, content }) => {
+	return (
+		<>
+			<Container>
+				<img src={ImgCover} alt='' />
 
-        <div>
-          <RiRewindFill />
-          <RiPlayFill />
-          <RiSpeedFill />
-        </div>
+				<Text>
+					<h1>{name}</h1>
+					<p>{content}</p>
+				</Text>
 
-        <div></div><div></div>
-        
-        <div>
-          <p>03:20<p></p>00:12</p>
-        </div>
-      </Container>
-    </>
-  );
+				<PlayerButtons>
+					<Rewind>
+						<RiRewindFill />
+					</Rewind>
+					<Play>
+						<RiPlayFill />
+					</Play>
+					<FastForward>
+						<RiSpeedFill />
+					</FastForward>
+				</PlayerButtons>
+
+				<PlayerComponents>
+					<ProgressBar />
+					<Timer>
+						<p>12:13</p>
+						<p>12:13</p>
+					</Timer>
+				</PlayerComponents>
+			</Container>
+		</>
+	);
 };

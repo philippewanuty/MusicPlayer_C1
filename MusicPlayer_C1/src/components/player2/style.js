@@ -7,17 +7,26 @@ export const Container = styled.div`
 	flex-direction: column;
 	gap: 1.75rem;
 
-	padding: 2.375rem;
+	padding: 1.75rem;
 	border-radius: 0.625rem;
 
 	background-color: ${theme.display_background};
 
+`;
+
+export const PlayerContent = styled.div`
+
+	display: flex;
+	gap: 1.75rem;
+
 	img {
-		width: 11.875rem;
-		height: 11.875rem;
+		width: 5.25rem;
+		height: 5.25rem;
 		border-radius: 0.375rem;
 	}
 `;
+
+
 
 export const Text = styled.div`
 	h1 {
@@ -30,7 +39,6 @@ export const Text = styled.div`
 
 	> p {
 		color: ${theme.platinum};
-		color: white;
 		font-size: 1.188rem;
 		font-weight: 400;
 		line-height: 1.188rem;
@@ -49,15 +57,16 @@ export const PlayerButtons = styled.div`
 `;
 
 export const Rewind = styled.button`
+
 	border: none;
 	background: none;
 	cursor: pointer;
 
 	> svg {
-		height: 1.75rem;
-		width: 1.75rem;
+        height: 1.75rem;
+        width: 1.75rem;
 
-		color: ${theme.platinum};
+        color: ${theme.platinum};
 	}
 `;
 
@@ -101,11 +110,6 @@ gap: 0.675rem;
 
 
 export const ProgressBar = styled.div`
-	/* width: 100%;
-	height: 4px;
-	border-radius: 8px;
-
-	background-color: grey; */
 
 	position: relative;
 
@@ -117,7 +121,7 @@ export const ProgressBar = styled.div`
 		background: ${theme.Gray85};
 		opacity: 0.3;
 		border-radius: 10px;
-		
+
 		position: absolute;
 	}
 
@@ -129,15 +133,6 @@ export const ProgressBar = styled.div`
 		background: ${theme.Gray85};
 		border-radius: 10px;
 	}
-
-	/* 
-	> div {
-		width: 80%;
-		height: 4px;
-		border-radius: 8px;
-
-		background-color: ${theme.Gray85};
-	} */
 `;
 
 export const Timer = styled.div`
@@ -147,7 +142,7 @@ width: 100%;
 display: flex;
 justify-content: space-between;
 
-color: ${theme.lavanderGray};
+color: ${theme.lavanderGray} ;
 
     
 `;

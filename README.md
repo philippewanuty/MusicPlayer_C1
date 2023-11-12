@@ -20,7 +20,7 @@ Desenvolver o player conforme especificado utilizando as tecnologias da sua pref
 </p>
 
 
-## 🖥️ Projeto online
+## 🖥️ Projeto
 
  Tecnologia usada : ReactJS <br>
  Estilização: Styled Components

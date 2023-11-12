@@ -15,8 +15,8 @@ Desenvolver o player conforme especificado utilizando as tecnologias da sua pref
 
 
 <p align="center">
-  <img width="750px" src="https://raw.githubusercontent.com/philippewanuty/MusicPlayer_C1/main/MusicPlayer_C1/src/assets/Projeto.png">
-  <img width="215px" src="https://raw.githubusercontent.com/philippewanuty/MusicPlayer_C1/main/MusicPlayer_C1/src/assets/mobile.jpg">
+  <img width="px" src="https://raw.githubusercontent.com/philippewanuty/MusicPlayer_C1/main/MusicPlayer_C1/src/assets/Projeto.png">
+  <img width="400px" src="https://raw.githubusercontent.com/philippewanuty/MusicPlayer_C1/main/MusicPlayer_C1/src/assets/mobile.jpg">
 </p>
 
 

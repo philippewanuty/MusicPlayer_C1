@@ -1,0 +1,11 @@
+export default {
+	COLORS: {
+		BACKGROUND_900: '#0F0D13',
+		BACKGROUND_800: '#2A2141',
+
+		PLATINUM: '#E1E1E6',
+
+		GRAY_85: '#D9D9D9',
+		LAVANDER_GRAY: '#C4C4CC',
+	},
+};

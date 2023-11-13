@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-import {theme} from '../../theme'
-
 
 export const Container = styled.div`
 	display: flex;
@@ -10,12 +8,10 @@ export const Container = styled.div`
 	padding: 1.75rem;
 	border-radius: 0.625rem;
 
-	background-color: ${theme.display_background};
-
+	background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
 `;
 
 export const PlayerContent = styled.div`
-
 	display: flex;
 	gap: 1.75rem;
 
@@ -26,11 +22,9 @@ export const PlayerContent = styled.div`
 	}
 `;
 
-
-
 export const Text = styled.div`
 	h1 {
-		color: ${theme.platinum};
+		color: ${({ theme }) => theme.COLORS.PLATINUM};
 		font-size: 1.5rem;
 		font-weight: 700;
 		line-height: 1.5rem;
@@ -38,7 +32,7 @@ export const Text = styled.div`
 	}
 
 	> p {
-		color: ${theme.platinum};
+		color: ${({ theme }) => theme.COLORS.PLATINUM};
 		font-size: 1.188rem;
 		font-weight: 400;
 		line-height: 1.188rem;
@@ -46,30 +40,23 @@ export const Text = styled.div`
 	}
 `;
 
-
-
 export const PlayerButtons = styled.div`
-
 	display: flex;
 	justify-content: space-between;
-
-	
 `;
 
 export const Rewind = styled.button`
-
 	border: none;
 	background: none;
 	cursor: pointer;
 
 	> svg {
-        height: 1.75rem;
-        width: 1.75rem;
+		height: 1.75rem;
+		width: 1.75rem;
 
-        color: ${theme.platinum};
+		color: ${({ theme }) => theme.COLORS.PLATINUM};
 	}
 `;
-
 
 export const Play = styled.button`
 	border: none;
@@ -80,7 +67,7 @@ export const Play = styled.button`
 		height: 1.75rem;
 		width: 1.75rem;
 
-		color: ${theme.platinum};
+		color: ${({ theme }) => theme.COLORS.PLATINUM};
 	}
 `;
 
@@ -93,24 +80,17 @@ export const FastForward = styled.button`
 		height: 1.75rem;
 		width: 1.75rem;
 
-		color: ${theme.platinum};
+		color: ${({ theme }) => theme.COLORS.PLATINUM};
 	}
 `;
 
-
-
 export const PlayerComponents = styled.div`
-
-display: flex;
-flex-direction: column;
-gap: 0.675rem;
-
-
+	display: flex;
+	flex-direction: column;
+	gap: 0.675rem;
 `;
 
-
 export const ProgressBar = styled.div`
-
 	position: relative;
 
 	&::before {
@@ -118,7 +98,7 @@ export const ProgressBar = styled.div`
 		height: 6px;
 		width: 100%;
 		display: block;
-		background: ${theme.Gray85};
+		background: ${({ theme }) => theme.COLORS.GRAY_85};
 		opacity: 0.3;
 		border-radius: 10px;
 
@@ -130,20 +110,16 @@ export const ProgressBar = styled.div`
 		height: 6px;
 		width: 80%;
 		display: block;
-		background: ${theme.Gray85};
+		background: ${({ theme }) => theme.COLORS.GRAY_85};
 		border-radius: 10px;
 	}
 `;
 
 export const Timer = styled.div`
+	width: 100%;
 
-width: 100%;
+	display: flex;
+	justify-content: space-between;
 
-display: flex;
-justify-content: space-between;
-
-color: ${theme.lavanderGray} ;
-
-    
+	color: ${({ theme }) => theme.COLORS.LAVANDER_GRAY};
 `;
-
